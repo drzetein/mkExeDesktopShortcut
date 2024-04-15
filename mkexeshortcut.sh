@@ -17,7 +17,7 @@ fi
 
 input="$(readlink -f "$1")"
 
-if ( file --mime-type "$input" | grep -o "application/x-dosexec" >/dev/null ); then
+if ( file --mime-type "$input" | grep -e "application/x-dosexec" -e "application/vnd.microsoft.portable-executable" >/dev/null ); then
     echo -e "\e[1m\e[1;33mWorking on file:\e[0m \e[3m\e[96m\"$input\"\e[0m\e[1m\e[1;33m.\e[0m"
 else
     echo -e "\e[1m\e[31mERROR: File is not a Windows executable:\e[0m \e[3m\e[96m\"$input\"\e[0m\e[1m\e[31m.\e[0m"
