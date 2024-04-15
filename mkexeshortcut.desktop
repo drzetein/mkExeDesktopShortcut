@@ -1,7 +1,7 @@
 [Desktop Entry]
 Version=1.05
 Type=Service
-MimeType=application/x-ms-dos-executable
+MimeType=application/x-ms-dos-executable;application/vnd.microsoft.portable-executable
 Icon=insert-link
 Actions=mkExeShortcut;mkExeDesktopShortcut;
 X-KDE-ServiceTypes=KonqPopupMenu/Plugin
